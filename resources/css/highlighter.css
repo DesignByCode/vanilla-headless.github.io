@@ -1,0 +1,115 @@
+.highlight {
+  @apply relative bg-gray-100 text-gray-800 overflow-x-auto dark:bg-gray-800 block rounded-b-md p-0 dark:text-gray-200 font-mono pr-10 max-w-full border dark:border-gray-800 border-gray-300  border-t-0;
+}
+
+
+.highlight::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.highlight::-webkit-scrollbar {
+  background: theme('colors.gray.200');
+}
+
+.dark .highlight::-webkit-scrollbar {
+  background: theme('colors.gray.700');
+}
+
+.highlight::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.highlight::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary.500');
+  border-radius: 5px;
+}
+
+
+
+.highlight code {
+  @apply py-2 px-4 min-h-[40px] inline-block;
+}
+.highlight .rouge-table code {
+  @apply px-8 inline-block;
+}
+
+.gutter.gl {
+  @apply text-gray-400/50 dark:text-gray-600 select-none bg-gray-100 dark:bg-gray-800 left-0 sticky px-2;
+}
+
+.lineno {
+  @apply border-r border-gray-400/20 dark:border-gray-600 pr-2;
+}
+
+/*  comments */
+.highlight .c,
+.highlight .cm{
+  @apply text-gray-500;
+}
+
+.language-plaintext.highlighter-rouge {
+  @apply bg-primary-200/70 dark:bg-gray-900/50 dark:text-primary-400 backdrop-blur rounded p-px;
+}
+
+
+/* Tag */
+.highlight .nt {
+  @apply text-green-600 dark:text-green-400;
+}
+/* Attribute */
+.highlight .na {
+  @apply text-indigo-600 dark:text-indigo-300;
+}
+/* Attribute value */
+.highlight .s {
+  @apply text-primary-600 dark:text-primary-300;
+}
+
+/* css square brackets */
+.highlight .o {
+  @apply text-red-600;
+}
+
+/* css diff error */
+.highlight .gd {
+  @apply bg-red-600/30 text-pink-400;
+}
+
+/* css diff change */
+.highlight .gi {
+  @apply bg-green-600/30 text-lime-400;
+}
+
+/* css curly brackets and semicolon */
+.highlight .p {
+  @apply text-orange-600;
+}
+
+/* css curly brackets and semicolon */
+.highlight .s1 {
+  @apply text-blue-500;
+}
+/* css unit */
+.highlight .m {
+  @apply text-sky-500;
+}
+
+/* Javascript */
+.highlight .nb,
+.highlight .nb {
+  @apply text-sky-500;
+}
+/* Javascript */
+.highlight .nx {
+  @apply text-rose-500;
+}
+
+/* Javascript */
+.highlight .k {
+  @apply text-rose-300;
+}
+/* Javascript */
+.highlight .kc {
+  @apply text-rose-200;
+}

@@ -1,0 +1,28 @@
+
+- name: Components
+  sub:
+    - name: Menu (Dropdown)
+      url: /documentation/dropdown
+
+    - name: Popover
+      url: /documentation/popover
+
+    - name: Disclosure
+      url: /documentation/disclosure
+
+    - name: Switch (Toggle)
+      url: /documentation/toggle
+
+    - name: DarkMode
+      url: /documentation/darkmode
+
+- name: Directives
+  sub:
+    - name: Button
+      url: /documentation/button
+
+    - name: ScrollTop
+      url: /documentation/scrolltop
+
+    - name: GoBack
+      url: /documentation/goback

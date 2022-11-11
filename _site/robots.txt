@@ -1,0 +1,1 @@
+Sitemap: /vanilla-headless-docs/sitemap.xml

@@ -1,0 +1,40 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/vanilla-headless-docs" # the subpath of your site, e.g. /blog
+title: "Vanilla Headless" # the name of your site, e.g. ACME Corp.
+source: "."
+
+github:
+  username: Github
+  url: https://github.com/DesignByCode/vanilla-headless
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+exclude:
+  - resources
+  - headlessAttributes.js
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - tsconfig.json
+  - webpack.mix.js

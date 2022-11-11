@@ -1,0 +1,63 @@
+
+
+<section
+        class="w-full pt-48 pb-32 bg-gradient-to-br from-primary-400 to-primary-500 dark:from-gray-800 dark:to-gray-900">
+    <div id="tilt" class="relative wrapper" data-title-glare="false" data-tilt-max="20" data-tilt-speed="400"
+         data-tilt-perspective="1200" >
+            <div
+                    class="absolute rounded-md bg-white shadow-lg shadow-primary-900/20 inset-4 scale-90 translate-y-20 "></div>
+        <div
+                class="absolute rounded-md bg-white shadow-lg shadow-primary-900/20 inset-4 scale-95  translate-y-12 "></div>
+        <div class="relative flex flex-col justify-center items-center min-h-[600px] py-4 md:py-6 lg:py-8 rounded-md bg-white shadow-lg shadow-primary-900/20">
+        <div
+                class="absolute top-0 inset-x-0 h-10 bg-gray-100 border-b border-gray-200 rounded-t-md flex items-center select-none justify-between ">
+            <div class="space-x-0 ml-4 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                     stroke="currentColor" class="w-4 h-4 inline-block rotate-180">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                     stroke="currentColor" class="w-4 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                     stroke="currentColor" class="w-4 h-4 inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+            </div>
+                <div class="w-1/2 rounded-md bg-white inline-block border border-gray-300 text-gray-400 px-2 text-sm flex items-center">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-3 h-3 mr-2 inline-block text-green-500">
+                        <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                    </svg>
+                    https://www.npmjs.com/package/vanilla-headless
+                </div>
+
+            <div class="space-x-1 mr-4">
+                <div class="h-3 w-3 bg-red-500 inline-block rounded-full"></div>
+                <div class="h-3 w-3 bg-yellow-500 inline-block rounded-full"></div>
+                <div class="h-3 w-3 bg-green-500 inline-block rounded-full"></div>
+            </div>
+        </div>
+        <img loading="lazy" class="max-w-[200px] block translate-z-36"
+             src="{{ '/assets/img/vh.svg' | relative_path }}"
+             alt="{{ site.title }}">
+        <p class="text-6xl font-light mt-2 mb-4 font-heading font-medium"><span class="text-primary-500">vanilla
+        </span><span
+                class="text-gray-900">headless</span></p>
+        <button type="button" is="headless-button"
+                class="aria-pressed:bg-gray-700 bg-gray-900 text-white px-8 py-2 inline-block hover:bg-gray-800 shadow-md shadow-black/20  rounded-md min-w-[300px] text-center"
+           >Documentation</button>
+        <div class="my-4 flex space-x-4">
+            <a href="#"><img loading="lazy" alt="npm (tag)"
+                             src="https://img.shields.io/npm/v/vanilla-headless/latest?color=brightgreen"></a>
+            <a href="#"><img loading="lazy" alt="npm type definitions"
+                             src="https://img.shields.io/npm/types/vanilla-headless"></a>
+            <a href="#"><img loading="lazy" alt="NPM" src="https://img.shields.io/npm/l/vanilla-headless"></a>
+        </div>
+{% highlight bash %} npm install "vanilla-headless" {% endhighlight %}
+    </div>
+
+    </div>
+</section>
+

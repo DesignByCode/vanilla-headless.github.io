@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Happy Jekylling!"
+---
+
+{% include hero.liquid %}
+
+
+<div class="wrapper my-24">
+    <div class="relative bg-white/10 dark:bg-gray-900/10 p-5 backdrop-blur rounded-md md:-rotate-[2deg]">
+        {% include parts/borders.liquid %}
+    <x-scroll class="flex relative p-4 rounded-md gap-8 overflow-x-scroll snap-mandatory x-scroll snap-x scroll-smooth" role="menu">
+        {% for item in site.data.docnav[0].sub %}
+        <a href="{{item.url}}" role="menuitem" tabindex="0"
+           class="w-60 h-48 snap-center overflow-hidden rounded-md bg-gray-300/50 backdrop-blur flex-shrink-0">
+            <img src="/assets/img/thumbs/dropdown.jpg" alt="{{ item.name }}">
+        </a>
+        {% endfor %}
+
+    </x-scroll>
+    </div>
+</div>
