@@ -1,1 +1,1 @@
-Sitemap: /vanilla-headless-docs/sitemap.xml
+Sitemap: https://vanilla-headless.github.io/vanilla-headless/sitemap.xml
