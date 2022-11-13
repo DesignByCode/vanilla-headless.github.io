@@ -78,3 +78,6 @@ components on page.
 | Click outside component                   | Close all open elements on page |
 | Tab, DownArrow, RightArrow keys           | Navigate down with with keys    |
 | Shift + Tab, UpArrow, RightArrow keys     | Navigate up with with keys      |
+
+
+{% include parts/docs/popper.liquid %}

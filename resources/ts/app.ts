@@ -1,6 +1,6 @@
 import "vanilla-headless"
 import "./XScroll"
-
+import "./search.js"
 
 
 document.querySelectorAll('.highlight').forEach((block: HTMLElement) => {

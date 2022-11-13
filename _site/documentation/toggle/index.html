@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang=" en-US">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Switch (Toggle) | Vanilla Headless
     </title>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Titillium+Web&display=swap" rel="stylesheet">
-    <link type="application/atom+xml" rel="alternate" href="https://vanilla-headless.github.io/vanilla-headless/feed.xml" title="Vanilla Headless" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Vanilla Headless" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Switch (Toggle) | Vanilla Headless</title>
 <meta name="generator" content="Jekyll v4.3.0" />
@@ -22,29 +21,36 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Switch (Toggle) Switches are custom element that allow you to toggle between two states using mouse and keyboard event. By default, the component only do two things. First it will change attribute aria-checked of button and secondly it will add a data attribute of data-switch to root of component. This data attribute can be additional add to any element within the component." />
 <meta property="og:description" content="Switch (Toggle) Switches are custom element that allow you to toggle between two states using mouse and keyboard event. By default, the component only do two things. First it will change attribute aria-checked of button and secondly it will add a data attribute of data-switch to root of component. This data attribute can be additional add to any element within the component." />
-<link rel="canonical" href="https://vanilla-headless.github.io/vanilla-headless/documentation/toggle/" />
-<meta property="og:url" content="https://vanilla-headless.github.io/vanilla-headless/documentation/toggle/" />
+<link rel="canonical" href="http://localhost:4000/documentation/toggle/" />
+<meta property="og:url" content="http://localhost:4000/documentation/toggle/" />
 <meta property="og:site_name" content="Vanilla Headless" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-11-11T15:50:24+02:00" />
+<meta property="article:published_time" content="2022-11-13T15:03:02+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Switch (Toggle)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-11T15:50:24+02:00","datePublished":"2022-11-11T15:50:24+02:00","description":"Switch (Toggle) Switches are custom element that allow you to toggle between two states using mouse and keyboard event. By default, the component only do two things. First it will change attribute aria-checked of button and secondly it will add a data attribute of data-switch to root of component. This data attribute can be additional add to any element within the component.","headline":"Switch (Toggle)","mainEntityOfPage":{"@type":"WebPage","@id":"https://vanilla-headless.github.io/vanilla-headless/documentation/toggle/"},"url":"https://vanilla-headless.github.io/vanilla-headless/documentation/toggle/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-13T15:03:02+02:00","datePublished":"2022-11-13T15:03:02+02:00","description":"Switch (Toggle) Switches are custom element that allow you to toggle between two states using mouse and keyboard event. By default, the component only do two things. First it will change attribute aria-checked of button and secondly it will add a data attribute of data-switch to root of component. This data attribute can be additional add to any element within the component.","headline":"Switch (Toggle)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/documentation/toggle/"},"url":"http://localhost:4000/documentation/toggle/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <script src="/assets/js/app.js" defer></script>
-  </head>
-  <body
-          class="relative overflow-x-hidden min-h-screen font-sans antialiased dark:bg-gray-900 text-gray-700 dark:text-gray-100">
-    <a href="#main" class="sr-only">Go to main content</a>
-    
-<headless-navigation class="block fixed inset-x-0 z-40 top-0 bg-gray-100/70 dark:bg-gray-900/70 backdrop-blur-md group">
+
+</head>
+<body
+        class="relative overflow-x-hidden min-h-screen font-sans antialiased dark:bg-gray-900 text-gray-700 dark:text-gray-100">
+<a href="#main" class="sr-only">Go to main content</a>
+
+<div class="fixed left-1/3 -top-1/2 h-full w-1/2 block opacity-10 grad blur-3xl rounded-full animate-turn">
+
+</div>
+
+
+<headless-navigation
+        class="block fixed shadow dark:shadow-gray-800 inset-x-0 z-40 top-0 bg-gray-100/70 dark:bg-gray-900/70 backdrop-blur-md group">
   <div class="wrapper">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
         <div class="flex-shrink-0">
-            <a href="https://vanilla-headless.github.io">
+            <a href="http://localhost:4000">
                 <span class="sr-only">Vanilla Headless</span>
                 <img class="h-8 w-auto sm:h-10 dark:hidden" src="/assets/img/vh.svg"  alt="Vanilla Headless">
                 <img class="h-8 w-auto sm:h-10 hidden dark:block"  src="/assets/img/vh-dark.svg"  alt="Vanilla Headless">
@@ -95,7 +101,7 @@
       </div>
       <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
         <div class="max-w-lg w-full lg:max-w-xs">
-          <label for="search" class="sr-only">Search</label>
+          <label for="search-input" class="sr-only">Search</label>
           <div class="relative">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <!-- Heroicon name: solid/search -->
@@ -104,8 +110,17 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
               </svg>
             </div>
-            <input id="search" name="search"
-                   class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-200/90 dark:bg-gray-700/90 text-gray-700   dark:text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Search" type="search">
+            <input id="search-input" autocomplete="false"
+                   class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-200/90 dark:bg-gray-700/90 text-gray-700   dark:text-gray-700 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Search" type="search">
+              <ul role="menu" aria-orientation="vertical" tabindex="-1"
+                  class="absolute right-0 mt-2 min-w-full text-gray-700 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden" id="results-container">
+                    <li><a class="px-4 py-2 block hover:bg-gray-100" href="/about">
+                          <span class="block font-semibold">About page</span>
+                          <span class="text-sm line-clamp-2">
+                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores aut consequatur consequuntur, ducimus illo ipsa iusto libero molestiae natus nesciunt nihil officiis placeat quaerat quam quod repudiandae similique tenetur?
+                          </span>
+                    </a></li>
+              </ul>
           </div>
         </div>
       </div>
@@ -145,10 +160,8 @@
 </headless-navigation>
 
 
-
-
-    <main id="main">
-      <!--<div class="mt-32 wrapper">-->
+<main id="main">
+    <!--<div class="mt-32 wrapper">-->
 <!--  <div class="space-y-5 bg-white/10 dark:bg-gray-900/10 border border-gray-200 dark:border-gray-900 backdrop-blur rounded-md p-5">-->
 <!--    <nav class="flex w-full" aria-label="Breadcrumb">
   <ol role="list" class="flex items-center space-x-1">
@@ -197,23 +210,23 @@
             </button>
             <div id="Components" class=" space-y-5">
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/dropdown">
+                    <a class="flex items-center" href="/documentation/dropdown">
                         Menu (Dropdown)
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/popover">
+                    <a class="flex items-center" href="/documentation/popover">
                         Popover
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/disclosure">
+                    <a class="flex items-center" href="/documentation/disclosure">
                         Disclosure
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/toggle">
+                    <a class="flex items-center" href="/documentation/toggle">
                         Switch (Toggle)
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/darkmode">
+                    <a class="flex items-center" href="/documentation/darkmode">
                         DarkMode
                     </a>
                 
@@ -226,15 +239,15 @@
             </button>
             <div id="Directives" class=" space-y-5">
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/button">
+                    <a class="flex items-center" href="/documentation/button">
                         Button
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/scrolltop">
+                    <a class="flex items-center" href="/documentation/scrolltop">
                         ScrollTop
                     </a>
                 
-                    <a class="flex items-center" href="/vanilla-headless/documentation/goback">
+                    <a class="flex items-center" href="/documentation/goback">
                         GoBack
                     </a>
                 
@@ -409,8 +422,88 @@ element within the component.</p>
       </div>
   </aside>
 </div>
-    </main>
-    <button type="button"
+    <div class="wrapper my-12">
+        <div class="relative grid md:grid-cols-12 gap-5">
+            <div
+        class="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-800 to-transparent -inset-x-12 absolute -top-4"></div>
+<div
+        class="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-800 to-transparent -inset-x-12 absolute -bottom-4"></div>
+<div
+        class="w-px bg-gradient-to-b from-transparent via-gray-200 dark:via-gray-800 to-transparent -inset-y-12 absolute -left-4"></div>
+<div
+        class="w-px bg-gradient-to-b from-transparent via-gray-200 dark:via-gray-800 to-transparent -inset-y-12 absolute -right-4"></div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/dropdown" class="text-xl hover:underline rounded-md">Menu (Dropdown)</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/popover" class="text-xl hover:underline rounded-md">Popover</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/disclosure" class="text-xl hover:underline rounded-md">Disclosure</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/toggle" class="text-xl hover:underline rounded-md">Switch (Toggle)</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/darkmode" class="text-xl hover:underline rounded-md">DarkMode</a>
+    </div>
+</div>
+            
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/button" class="text-xl hover:underline rounded-md">Button</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/scrolltop" class="text-xl hover:underline rounded-md">ScrollTop</a>
+    </div>
+</div>
+            
+            <div class="col-span-3 relative p-px overflow-hidden rounded-md">
+    <div
+            class="absolute inset-0 blur-xl bg-gradient-to-r from-primary-600 via-pink-300 to-primary-800 rounded-md"></div>
+    <div class="relative z-10 bg-white dark:bg-gray-900 p-5  w-full rounded-md">
+        <a href="/documentation/goback" class="text-xl hover:underline rounded-md">GoBack</a>
+    </div>
+</div>
+            
+            http://localhost:4000 ss
+        </div>
+    </div>
+
+</main>
+<button type="button"
         is="headless-scrolltop"
         class="aria-pressed:bg-primary-500 aria-pressed:shadow-sm fixed rounded-md shadow-md bottom-10 right-10 h-10 w-10 bg-white/90 backdrop-blur-md border border-gray-500 flex justify-center items-center z-50 dark:bg-gray-800 dark:text-gray-100">
     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -419,7 +512,7 @@ element within the component.</p>
               clip-rule="evenodd"/>
     </svg>
 </button>
-    
+
 
 
 <footer class="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
@@ -438,5 +531,5 @@ element within the component.</p>
   </div>
 </footer>
 
-  </body>
+</body>
 </html>

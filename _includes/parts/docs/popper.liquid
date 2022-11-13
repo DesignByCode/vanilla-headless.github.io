@@ -1,0 +1,17 @@
+## PopperJs
+PopperJs is already bundle in and only require an attribute of popper to work. PopperJs only works on Popover, DropDown and Navigation component.
+
+### Optional
+- Popper.js
+    - Required: Add attribute of popper or popper="true" to enable popper.js
+    - Change placement with attribute placement="bottom-end bottom-start"
+    - Change offset with attribute offset="0 20"
+
+<div class="not-prose mb-4" markdown="0">
+{% highlight html %}
+<headless-dropdown popper placement="bottom-end bottom-start" ....
+<headless-dropdown popper="true" placement="bottom-end,bottom-start" ....
+<headless-dropdown popper offset="0 20" ....
+<headless-dropdown popper="true" offset="0,20" ....
+{% endhighlight %}
+</div>

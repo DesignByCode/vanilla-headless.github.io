@@ -13,10 +13,18 @@ module.exports = {
     './_layouts/**/*.{html,liquid,md,markdown}',
     './_includes/**/*.{html,liquid,md,markdown}',
   ],
-  safelist: ["go-right", "btn-copy", "copied", "codeHeader"],
+  safelist: ["go-right", "btn-copy", "copied", "codeHeader", "p-4"],
   darkMode: "class",
   theme: {
     extend: {
+      keyframes: {
+        turn: {
+          '0%, 100%': {
+            transform: 'rotate(0deg)'
+            },
+          '50%': { transform: 'rotate(360deg)'}
+        }
+      },
       fontFamily: {
         "heading": ["Titillium Web", ...defaultTheme.fontFamily.serif],
         "sans": ["Open Sans", ...defaultTheme.fontFamily.sans]
@@ -25,6 +33,9 @@ module.exports = {
         primary: colors.amber,
         gray: colors.gray
       },
+      animation: {
+        turn: 'turn 10s ease-in-out infinite'
+      },
       maxWidth: {
         '8xl': '1680px'
       }
@@ -32,6 +43,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-attributes'),
+    require('@tailwindcss/line-clamp'),
     forms,
     typography
   ],

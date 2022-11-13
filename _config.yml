@@ -1,5 +1,5 @@
 url: "https://vanilla-headless.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/vanilla-headless" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 title: "Vanilla Headless" # the name of your site, e.g. ACME Corp.
 source: "."
 
