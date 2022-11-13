@@ -8,7 +8,7 @@ permalink: /documentation/goback/
 The ``headless-goback`` button directive allow to go-back to previous page using the navigator history api. 
 This directive extends the ``headless-button`` directive.
 
-<iframe class="w-full h-[300px] rounded-md" src="{{ "/iframes/goback.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[300px] rounded-md" src="{{ "/iframes/goback.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

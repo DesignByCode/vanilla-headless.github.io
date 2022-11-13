@@ -8,7 +8,7 @@ permalink: /documentation/scrolltop/
 The ``headless-scrolltop`` button directive makes it super easy to add a scroll to top feature to your website. 
 This directive extends the ``headless-button`` directive.
 
-<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/scrolltop.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/scrolltop.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

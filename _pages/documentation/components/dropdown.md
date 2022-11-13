@@ -8,7 +8,7 @@ permalink: /documentation/dropdown/
 
 The dropdown component allow you to create a custom web accessible dropdown with keyboard and mouse events.  
 
-<iframe class="w-full h-[350px] rounded-md" src="{{ "/iframes/dropdown.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[350px] rounded-md" src="{{ "/iframes/dropdown.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

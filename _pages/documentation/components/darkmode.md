@@ -7,7 +7,7 @@ permalink: /documentation/darkmode/
 # Dark Mode
 The dark mode component will toggle between dark and light and save the result to localStorage.
 
-<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/darkmode.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/darkmode.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

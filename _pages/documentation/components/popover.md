@@ -8,7 +8,7 @@ permalink: /documentation/popover/
 Popover component is perfect for showing and hide elements on pages. Works nice in navigation menus, hide figure 
 captions and creating flyout menus.
 
-<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/popover.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[400px] rounded-md" src="{{ "/iframes/popover.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

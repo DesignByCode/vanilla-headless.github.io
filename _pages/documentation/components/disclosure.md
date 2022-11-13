@@ -9,7 +9,7 @@ permalink: /documentation/disclosure/
 The disclosure  component is UI pattern for showing and hiding a single or a list of grouped elements. 
 The is common used for FAQ sections on most websites.   
 
-<iframe class="w-full h-[550px] rounded-md" src="{{ "/iframes/disclosure.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[550px] rounded-md" src="{{ "/iframes/disclosure.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

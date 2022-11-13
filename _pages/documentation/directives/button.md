@@ -8,7 +8,7 @@ permalink: /documentation/button/
 The button component acts just like a normal button, but with the added feature by adding ``aria-pressed`` on mouse 
 and keyboard events.
 
-<iframe class="w-full h-[250px] rounded-md" src="{{ "/iframes/button.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[250px] rounded-md" src="{{ "/iframes/button.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 

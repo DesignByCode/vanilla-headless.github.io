@@ -10,7 +10,7 @@ the component only do two things. First it will change attribute ``aria-checked`
 add a data attribute of ``data-switch`` to root of component. This data attribute can be additional add to any 
 element within the component. 
 
-<iframe class="w-full h-[380px] rounded-md" src="{{ "/iframes/toggle.html" | relative_path }}"></iframe>
+<iframe class="w-full h-[380px] rounded-md" src="{{ "/iframes/toggle.html" | absolute_url }}"></iframe>
 
 {% include parts/docs/import.liquid %}
 
